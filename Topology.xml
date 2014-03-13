@@ -1,0 +1,88 @@
+<domain ASID="1234">
+    <info>
+        <title>Test Topology</title>
+        <date>2014-01-21</date>
+        <author>Roxana</author>
+        <description>
+            Test Topology
+        </description>
+        <units>
+            <unit type="bandwidth" value="kbps" />
+            <unit type="delay" value="ms" />
+        </units>
+    </info>
+	<topology>
+        <nodes>
+            <node id="1">
+                <interfaces>
+                    <interface id="0">
+                    </interface>
+                </interfaces>
+                <nodestatus status="on" />
+				<powerprofileid id="1" />
+                <powerprofilesleepid id="1" />
+				<loadmax load="100" />
+				<loadcurrent load="0" />
+            </node>
+            <node id="2">
+                <interfaces>
+                    <interface id="0">
+                    </interface>
+                </interfaces>
+                <nodestatus status="on" />
+				<powerprofileid id="1" />
+                <powerprofilesleepid id="1" />
+				<loadmax load="100" />
+				<loadcurrent load="0" />
+            </node>
+            <node id="3">
+                <interfaces>
+                    <interface id="0">
+                    </interface>
+                </interfaces>
+                <nodestatus status="on" />
+				<powerprofileid id="1" />
+                <powerprofilesleepid id="1" />
+				<loadmax load="100" />
+				<loadcurrent load="0" />
+            </node>
+            <node id="4">
+                <interfaces>
+                    <interface id="0">
+                    </interface>
+                </interfaces>
+                <nodestatus status="on" />
+				<powerprofileid id="1" />
+                <powerprofilesleepid id="1" />
+				<loadmax load="100" />
+				<loadcurrent load="0" />
+            </node>
+        </nodes>
+        <links>
+            <link id="1_0-&gt;2_0">
+                <from if="0" node="1" />
+                <to if="0" node="2" />
+                <bw>200000</bw>
+                <delay>1.4</delay>
+            </link>
+            <link id="2_0-&gt;4_0">
+                <from if="0" node="2" />
+                <to if="0" node="4" />
+                <bw>200000</bw>
+                <delay>1.4</delay>
+            </link>
+            <link id="1_0-&gt;3_0">
+                <from if="0" node="1" />
+                <to if="0" node="3" />
+                <bw>200000</bw>
+                <delay>1.4</delay>
+            </link>
+            <link id="3_0-&gt;4_0">
+                <from if="0" node="3" />
+                <to if="0" node="4" />
+                <bw>200000</bw>
+                <delay>1.4</delay>
+            </link>
+        </links>
+    </topology>
+</domain>
